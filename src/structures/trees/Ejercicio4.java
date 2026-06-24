@@ -21,7 +21,7 @@ public class Ejercicio4 {
     public void arbolNormal(node root){
 
         System.out.println("Arbol normal:");
-        printTreeRecursivo(root, 1);
+        printTreeRecursivo(root, 0);
     }
     private void printTreeRecursivo(node<Integer> node, int level) {
         if (node == null) {

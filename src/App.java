@@ -19,6 +19,7 @@ public class App {
         runEjercicio2();
         runEjercicio3();
         runEjercicio4();
+        
     }
     private static void runEjercicio4() {
         Ejercicio4 ejercicio4 = new Ejercicio4();
@@ -33,6 +34,17 @@ public class App {
         ejercicio4.arbolNormal(root);
         int profudidad = ejercicio4.maxDepth(root);
         System.out.println("Profundidad del árbol: " + profudidad);
+
+
+        /// Pruebas
+        /// 
+        prueba(new int[]{});
+        prueba(new int[]{1});
+        prueba(new int[]{1, 2, 3});
+        prueba(new int[]{1, 2, 3, 4, 5});
+        
+
+        
     }
     private static void runEjercicio3() {
         Ejercicio3 ejercicio3 = new Ejercicio3();
@@ -148,5 +160,38 @@ public class App {
         //System.out.println(arbolNumeros.getPeso);
 
         
+    }
+    // implementacion de los casos de prueba
+    public static void prueba(int[] numeros) {
+        System.out.println("");
+
+        Ejercicio1 ejercicio1 = new Ejercicio1();
+        Ejercicio2 ejercicio2 = new Ejercicio2();
+        Ejercicio3 ejercicio3 = new Ejercicio3();
+        Ejercicio4 ejercicio4 = new Ejercicio4();
+
+        System.out.println();
+        System.out.println("Ejercicio Uno");
+        ejercicio1.insert(numeros);
+
+        System.out.println();
+        
+        ejercicio2.invertTree(arbol(numeros).getRoot());
+
+        System.out.println();
+        
+        ejercicio3.printLevels(arbol(numeros).getRoot());
+
+        System.out.println();
+        System.out.println("Ejercicio Cuatro");
+        node<Integer> root = arbol(numeros).getRoot();
+        System.out.println("Profundidad del arbol: " + ejercicio4.maxDepth(root));
+    }
+    public static BinaryTree<Integer> arbol(int[] numeros) {
+        BinaryTree<Integer> tree = new BinaryTree<>();
+        for (int numero : numeros) {
+            tree.add(numero);
+        }
+        return tree;
     }
 }
