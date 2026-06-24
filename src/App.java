@@ -41,7 +41,7 @@ public class App {
         prueba(new int[]{});
         prueba(new int[]{1});
         prueba(new int[]{1, 2, 3});
-        prueba(new int[]{1, 2, 3, 4, 5});
+        prueba(new int[]{3, 2, 8, 9, 10});
         
 
         
@@ -72,7 +72,8 @@ public class App {
 
 
     private static void runEjercicio1() {
-        
+        System.out.println("Ejercicio Uno");
+        System.out.println();
         Ejercicio1 ejercicio1 = new Ejercicio1();
             int[] numeros = new int[]{5,3,7,2,4,6,8};
             ejercicio1.insert(numeros);
