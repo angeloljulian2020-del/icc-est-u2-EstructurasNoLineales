@@ -92,8 +92,8 @@ Y tambien podemos calcular la altura del árbol y obtener su tamaño.
 ```
 
 ## Salida en consola
+![alt text](src/assets/salidaConsola2.png)
 
-![alt text](src/assets/image.png)
 
 ## Fecha:19/06/2026
 ## Clase BinaryTree:
@@ -120,4 +120,4 @@ public class BinaryTree<T extends Comparable<T>> {
 } 
 ```
 ## Salida en consola
-![alt text](src/assets/image-1.png)
+![alt text](src/assets/salidaConsola.png)
