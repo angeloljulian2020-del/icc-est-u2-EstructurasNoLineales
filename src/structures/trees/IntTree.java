@@ -58,7 +58,7 @@ public class IntTree {
 
         
     }
-
+    /// preOrden
     public void preOrden(){
         preOrdenRecurivo(root);
     }
@@ -70,6 +70,8 @@ public class IntTree {
         preOrdenRecurivo(actual.getLeft());
         preOrdenRecurivo(actual.getRight());
     }
+
+    //posOrden
     public void posOrden(){
         posOrdenRecurivo(root);
     }
@@ -82,6 +84,8 @@ public class IntTree {
         posOrdenRecurivo(actual.getRight());
         System.out.println(actual);
     }
+
+    //inOrden
     public void inOrden(){
         inOrdenRecurivo(root);
     }
@@ -109,6 +113,8 @@ public class IntTree {
             return masAlto + 1;
         }
 
+
+        // medir peso con recursividad con complejidad O(n)
         public int getSize(){
             return getSizetRecursivo(root);
         }
@@ -121,6 +127,7 @@ public class IntTree {
             
             return sizeLeft + sizeRight + 2;
         }
+        /// medir peso sinrecursividad con complejidad O(1)
         private int getpeso(){
             return peso;
         }
